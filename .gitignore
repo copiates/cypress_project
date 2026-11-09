@@ -1,0 +1,32 @@
+# Installed dependencies (root and backend)
+node_modules/
+**/node_modules/
+
+# Production/build output
+/dist/
+**/dist/
+
+# Local secrets and environment settings
+.env
+.env.*
+!.env.example
+
+# Local SQLite database and its journal/sidecar files
+/backend/bank.db
+/backend/bank.db-*
+
+# Cypress-generated artifacts (keep specs and support files)
+/cypress/screenshots/
+/cypress/videos/
+/cypress/downloads/
+
+# Local caches, work files, and logs
+.work/
+.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# macOS metadata
+.DS_Store
